@@ -54,7 +54,7 @@ const Card = styled.div `
         border-radius: 10px;
         text-align: center;
         padding: 15px;
-        height: 40vw;
+        height: 45vw;
         width: 80vw;
        }
   }

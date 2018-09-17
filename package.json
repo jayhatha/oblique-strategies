@@ -1,8 +1,12 @@
 {
   "name": "oblique",
   "version": "0.0.1",
+  "engines": {
+    "node": "10.1.0"
+  },
   "description": "oblique strategies, reactified and graphQLed",
   "main": "index.js",
+  "homepage": "https://jayhatha.github.io/oblique-strategies/",
   "scripts": {
     "build": "webpack",
     "build-babel": "npm run build-babel-server && npm run build-babel-client",
@@ -10,7 +14,9 @@
     "build-babel-client": "babel src/client --copy-files --out-dir ./dist/public",
     "start": "node ./dist/server.js",
     "clean": "rimraf dist node_modules",
-    "test": "jest ./src"
+    "test": "jest ./src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./src/enzyme.setup.js",
@@ -32,6 +38,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
+    "gh-pages": "^2.0.0",
     "graphql": "^14.0.2",
     "graphql-tag": "^2.9.2",
     "raf": "^3.4.0",

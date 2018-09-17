@@ -5,6 +5,7 @@ const scroll = Scroll.animateScroll;
 const scrollSpy = Scroll.scrollSpy;
 import styled, { keyframes } from 'styled-components';
 import {QuestionCircle} from 'styled-icons/fa-solid';
+import Header from './Header';
 
 const Wrapper = styled.nav`
   width: 100%;
@@ -20,7 +21,7 @@ const Wrapper = styled.nav`
   align-content: center;
   padding: 0 0.5em;
   height: auto;
-  background-color: PaleTurquoise;
+  background-color: darkcyan;
   transition: background 300ms ease-out;
   color: white;
   `
@@ -64,9 +65,6 @@ class Navbar extends Component {
           <QuestionCircle size="16" onClick={() => this.props.toggleInfo()}/>
           </li>
         </Navlist>
-        {this.props.info &&  
-        (<p>Hello Info</p>)
-        }
       </Wrapper>
     )
   }

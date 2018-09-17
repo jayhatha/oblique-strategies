@@ -10,7 +10,7 @@ import { ApolloProvider } from "react-apollo";
 import styled from "styled-components";
 
 const Wrapper = styled.section `
-  background: PaleTurquoise;
+  background: darkcyan;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -38,7 +38,7 @@ injectGlobal`
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: PaleTurquoise;
+    background-color: darkcyan;
   }
 `;
 
@@ -63,6 +63,9 @@ class App extends Component {
         return (
             <Wrapper className='app'>
             <Navbar toggleInfo={this.toggleInfo} info={this.state.showInfo}/>
+            {this.state.showInfo && 
+            (<Header toggleInfo={this.toggleInfo} info={this.state.showInfo}/>)
+        }
             <ApolloProvider client={client}>
                 <Strategies />
            </ApolloProvider>

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Element = Scroll.Element;
 
 const Wrapper = styled.section `
-  background: PaleTurquoise;
+  background: darkcyan;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;

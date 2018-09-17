@@ -24,7 +24,7 @@ const Title = styled.h1 `
 
 // Create a Wrapper component that'll render a <section> tag with some styles
 const Wrapper = styled.header `
-  background: papayawhip;
+  background: paleturquoise;
   padding: 20vh;
   display: -ms-flexbox;
   display: flex;

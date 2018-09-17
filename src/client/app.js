@@ -27,7 +27,7 @@ const Wrapper = styled.section `
 `;
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql"
+  uri: "http://oblique-strategy.herokuapp.com:4000/graphql"
 });
 
 injectGlobal`

@@ -42,11 +42,27 @@ injectGlobal`
   }
 `;
 
+
+
 class App extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            showInfo: false
+        }
+        this.toggleInfo = this.toggleInfo.bind(this)
+      }
+
+     toggleInfo = () =>  {
+        this.setState(prevState => ({
+            showInfo: !prevState.showInfo
+        })); 
+    }
+  
     render() {
         return (
             <Wrapper className='app'>
-            <Navbar />
+            <Navbar toggleInfo={this.toggleInfo} info={this.state.showInfo}/>
             <ApolloProvider client={client}>
                 <Strategies />
            </ApolloProvider>

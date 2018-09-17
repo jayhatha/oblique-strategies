@@ -3,5 +3,11 @@
     "@babel/preset-env",
     "@babel/preset-react"
   ], 
-  "plugins": ["styled-components"]
+  "plugins": ["styled-components", [
+    "@babel/plugin-proposal-class-properties",
+    {
+      "loose": true
+    }
+  ]
+  ]
 }

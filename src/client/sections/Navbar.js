@@ -61,9 +61,12 @@ class Navbar extends Component {
         </a>
         <Navlist>
           <li>
-          <QuestionCircle size="16"/>
+          <QuestionCircle size="16" onClick={() => this.props.toggleInfo()}/>
           </li>
         </Navlist>
+        {this.props.info &&  
+        (<p>Hello Info</p>)
+        }
       </Wrapper>
     )
   }

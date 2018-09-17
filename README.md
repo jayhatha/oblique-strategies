@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React-One-Pager-Boilerplate 😩👌
 ## A boilerplate for quickly setting up a single-page React app with: 
   * Sticky navbar!
@@ -15,3 +16,7 @@
 ## Todo 
 * test our built-in components
 * add eslint + config
+=======
+# oblique-strategies
+React implementation of Brian Eno's famous Oblique Strategies deck
+>>>>>>> c339a96296c342f1880a629af8d988aea69b7006

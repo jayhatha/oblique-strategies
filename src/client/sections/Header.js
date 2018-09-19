@@ -54,6 +54,9 @@ const Wrapper = styled.header `
   a {
     color: white;
   }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 class Header extends Component {

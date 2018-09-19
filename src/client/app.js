@@ -22,7 +22,7 @@ const Wrapper = styled.section `
   box-sizing: border-box;
   padding: 0 20vh 70vh 20vh;
   @media (max-width: 600px) {\
-   padding: 0 20vh 100vh 20vh;
+   padding: 0 5vh 100vh 5vh;
   }
 `;
 

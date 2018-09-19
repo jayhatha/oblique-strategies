@@ -26,9 +26,7 @@ const Wrapper = styled.section `
   }
 `;
 
-const client = new ApolloClient({
-  uri: "http://oblique-strategy.herokuapp.com:4000/graphql"
-});
+const client = new ApolloClient();
 
 injectGlobal`
   @import url(‘https://fonts.googleapis.com/css?family=Domine');
